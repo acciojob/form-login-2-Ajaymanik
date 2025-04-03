@@ -4,28 +4,27 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <label for="First Name">First Name :</label>
-  <input type="text" name="First Name" id="First Name"><br/>
+  <label for="first-name">First Name :</label>
+  <input type="text" id="first-name"><br/>
 
-  <label for="Last Name">Last Name :</label>
-  <input type="text" name="Last Name" id="Last Name"><br/>
+  <label for="last-name">Last Name :</label>
+  <input type="text" id="last-name"><br/>
 
-  <label for="Phone Number">Phone Number :</label>
-  <input type="number" name="Phone Number" id="Phone Number"><br/>
+  <label for="phone-number">Phone Number :</label>
+  <input type="number" id="phone-number"><br/>
 
-  <label for="Email ID">Email ID :</label>
-  <input type="email" name="Email ID" id="Email ID"><br/>
+  <label for="email-id">Email ID :</label>
+  <input type="email" id="email-id"><br/>
 
   <button type="submit" id="submit">Submit</button>
 
   <script>
-    let submitB = document.getElementById('submit');
-    submitB.addEventListener("click", function(event) {
+    document.getElementById('submit').addEventListener("click", function(event) {
       event.preventDefault();
-      let firstName = document.getElementById('First Name').value;
-      let lastName = document.getElementById('Last Name').value;
-      let phone = document.getElementById('Phone Number').value;
-      let email = document.getElementById('Email ID').value;
+      let firstName = document.getElementById('first-name').value;
+      let lastName = document.getElementById('last-name').value;
+      let phone = document.getElementById('phone-number').value;
+      let email = document.getElementById('email-id').value;
       
       let message = "First Name: " + firstName + " " +
                     "Last Name: " + lastName + " " +
