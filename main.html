@@ -4,22 +4,24 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <label for="first-name">First Name :</label>
-  <input type="text" id="first-name"><br/>
+  <form id="myForm">
+    <label for="first-name">First Name :</label>
+    <input type="text" name="First Name" id="first-name"><br/>
 
-  <label for="last-name">Last Name :</label>
-  <input type="text" id="last-name"><br/>
+    <label for="last-name">Last Name :</label>
+    <input type="text" name="Last Name" id="last-name"><br/>
 
-  <label for="phone-number">Phone Number :</label>
-  <input type="number" id="phone-number"><br/>
+    <label for="phone-number">Phone Number :</label>
+    <input type="number" name="Phone Number" id="phone-number"><br/>
 
-  <label for="email-id">Email ID :</label>
-  <input type="email" id="email-id"><br/>
+    <label for="email-id">Email ID :</label>
+    <input type="email" name="Email ID" id="email-id"><br/>
 
-  <button type="submit" id="submit">Submit</button>
+    <input type="submit" id="submit" value="Submit">
+  </form>
 
   <script>
-    document.getElementById('submit').addEventListener("click", function(event) {
+    document.getElementById('myForm').addEventListener("submit", function(event) {
       event.preventDefault();
       let firstName = document.getElementById('first-name').value;
       let lastName = document.getElementById('last-name').value;
